@@ -1,17 +1,44 @@
+:root {
+    --cinza-ligth: rgb(236, 236, 236);
+    --chumbo: rgb(85, 85, 85);
+    --azul: rgb(101, 136, 170);
+    --branco: rgb(255, 255, 255);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/*RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 100%;
+}
 
 body {
-    font: 20px arial, sans-serif;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
 }
+
+header {
+    background-color: var(--cinza-ligth);
+}
+
+
 .navbar {
-    background-color: rgb(5, 121, 14);
+    display: flex;
+    gap: 34px;
 }
 
 .quem-somos {
-    background-color: royalblue;
+    background-color: var(--azul);
+    color: var(--branco)
 }
 
 .parceiros {
-    background-color: silver;
+    background-color: var(--chumbo);
+    color: var(--branco)
 }
 
 .margin{
@@ -21,4 +48,10 @@ body {
 
 #time {
     margin: 20px;
+}
+
+.bg-footer {
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px;
 }
